@@ -1,3 +1,3 @@
-# Git and Github Course
+# Full WEB service on a Flask
 
-Crash course for Git
+This service is a complete multi-page website with a SQLite database.
