@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ blok title }}{{ endblok }}</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <title>
+        {% block title %}
+        
+        {% endblock %}
+    </title>
 </head>
 <body>
-    {{ blok body }}{{ endblok }}
+    {% block header %}
+        <h1>Это домашняя страница</h1>
+    {% endblock %}
+    {% block content %}
+        <ul>
+            <li>расписание занятий</li>
+            <li>Детали курса</li>
+            <li>Видеоурок</li>
+            <li>о нас</li>
+        </ul>
+    {% endblock %}
+    {% block footer %}
+        <div class="footer">
+                         Внизу сайта
+        </div>
+    {% endblock %}
+
 </body>
 </html>

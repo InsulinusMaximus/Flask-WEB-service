@@ -1,9 +1,10 @@
-{{ extends 'temlates/base.html' }}
+{% extends 'base.html' %}
 
-{{ blok title }}
-Main page
-{{ endblok }}
+{% block title %}
+         Это домашняя страница
+{% endblock %}
 
-{{ blok body }}
-<h1> Main page</h1>
-{{ endblok }}
+ {# Перепишите блок в родительском шаблоне #}
+{% block header %}
+    <h1>Это домашняя страница подшаблона</h1>
+{% endblock %}

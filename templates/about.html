@@ -1,11 +1,19 @@
-{{ extends 'temlates/base.html' }}
+{% extends 'base.html' %}
 
-{{ blok title }}
-Page about us
-{{ endblok }}
+{% block title %}
+         Это домашняя страница
+{% endblock %}
 
+ {# Перепишите блок в родительском шаблоне #}
+{% block header %}
+    <h1>Это страница со списком подмодельных курсов.</h1>
+{% endblock %}
 
-{{ blok body }}
-<h1> Page about us </h1>
-{{ endblok }}
-
+{% block content %}
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>C++</li>
+        </ul>
+{% endblock %}
