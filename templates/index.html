@@ -1,10 +1,18 @@
 {% extends 'base.html' %}
 
 {% block title %}
-         Это домашняя страница
+    Main
 {% endblock %}
 
  {# Перепишите блок в родительском шаблоне #}
 {% block header %}
-    <h1>Это домашняя страница подшаблона</h1>
+    <h1>Main page</h1>
+{% endblock %}
+
+{% block content %}
+    Main columns
+{% endblock %}
+
+{% block footer %} 
+        Footer of the Main page 
 {% endblock %}

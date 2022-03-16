@@ -1,19 +1,18 @@
 {% extends 'base.html' %}
 
 {% block title %}
-         Это домашняя страница
+         About
 {% endblock %}
 
  {# Перепишите блок в родительском шаблоне #}
 {% block header %}
-    <h1>Это страница со списком подмодельных курсов.</h1>
+    <h1>About us</h1>
 {% endblock %}
 
 {% block content %}
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>PHP</li>
-            <li>C++</li>
-        </ul>
+    About us columns
+{% endblock %}
+
+{% block footer %} 
+        Footer of the About us page 
 {% endblock %}
