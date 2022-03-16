@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 Flask==1.1.2
-=======
-Flask==2.0.3
->>>>>>> 563d904b143b680983637555c05f409f0db4d8bd
+Flask_SQLAlchemy==2.4.3
